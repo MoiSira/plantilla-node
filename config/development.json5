@@ -1,0 +1,33 @@
+{
+    SERVER: {
+        PORT: '443',
+        PORT_SWAGGER: '30005',
+        KEY_FILE_PATH: './lcsdevappmasterprueba01.credicard.com.key',
+        CERT_FILE_PATH: './lcsdevappmasterprueba01.credicard.com.ve.pem',
+        //CERT_PASSPHRASE: 'Betsx+4d8.35-a',
+    },
+    MARIABD: {
+        BDHOST: '10.134.0.219',
+        BDPORT: '3330',
+        BDUSER: 'notifications_usr',
+        BDPASSWORD: 'notifi2023push*',
+        BDDATABASE: 'notifications_push'
+    },
+    POSTGRESBD: {
+        BDHOST: '10.134.0.166',
+        BDPORT: '5437',
+        BDUSER: 'notifications_usr',
+        BDPASSWORD: 'notifi2023push*',
+        BDDATABASE: 'notifications_push'
+    },
+    LDAP: {
+        LDAPURL: 'ldap://10.132.0.25',
+        LDAPBASEDN: 'OU=OU Credicard Caracas,DC=credicard,DC=com,DC=ve',
+        LDAPUSERNAME: 'CREDICARD\\usrdtel',
+        LDAPPASSWORD: 'Servicio.2022'
+    },
+    JWT_TOKEN: {
+        SECRET_KEY: '568326b4faf626eda352681e383d54c3b8cd8a47f84396f12dd38eda45120321YNm2p5tisgxCvl419un7Xa1QG3lda1NV19WkqpAUoxQ=',
+        JWT_EXPIRE: '1h'
+    }
+}
